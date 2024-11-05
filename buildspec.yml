@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Maven dependencies
+      - mvn install  # Installs dependencies based on pom.xml
+
+  build:
+    commands:
+      - echo Building the Java application
+      - mvn package  # Compiles the code and packages it as a JAR or WAR file
+
+  post_build:
+    commands:
+      - echo Build completed
+
+artifacts:
+  files:
+    - target/*.jar  # Adjust this path if your final artifact has a different location or file type
+  discard-paths: no
