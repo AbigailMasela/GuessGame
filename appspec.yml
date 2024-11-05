@@ -6,4 +6,4 @@ Resources:
         Name: "MyLambdaFunction"
         Alias: "prod"
         CurrentVersion: "$LATEST"
-        TargetVersion: "2"
+        TargetVersion: "$LATEST"
